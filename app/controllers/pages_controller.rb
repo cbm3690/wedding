@@ -4,4 +4,16 @@ class PagesController < ApplicationController
 
   def story
   end
+
+  def rsvp
+  end
+
+  def gifts
+  end
+
+  def ceremony
+  end
+
+  def party
+  end
 end
