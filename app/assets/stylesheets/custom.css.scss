@@ -1,0 +1,129 @@
+@import "bootstrap";
+
+/* universal */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-color: #f0e7d6;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.center {
+	text-align: center;
+}
+
+.center h1 {
+	margin-bottom: 10px;
+}
+
+/* Navigation */
+
+.nav {
+	position: fixed;
+	width: 100%;
+	margin-left: 2%;
+	bottom: 0;
+	text-align: center;
+}
+
+.nav-pills a {
+	color: #333;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.nav-pills a:hover {
+	color: #333;
+	border-bottom: 5px solid #F4DFD3;
+	margin-top: -5px;
+}
+
+.nav-pills :hover {
+	background-color: #f0e7d6;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+*/
+
+
+/* Home */
+
+.mainPhoto {
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+}
+
+
+/* Ceremony */
+
+.map {
+	margin-left: 25%;
+}
+
+
+/* Registry */
+
+.registry {
+	margin-left: 38%;
+	font-size: 64px;
+	font-weight: 800;
+	text-transform: uppercase;
+}

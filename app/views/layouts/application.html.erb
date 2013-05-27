@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Carly & Cory | <%= yield(:title) %></title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
 <body>
-
-<%= yield %>
-
+  		<div class="container">
+  			<!-- <%= link_to "Carly & Cory", root_path, id: "logo" %> -->
+  			<nav>
+  				<ul class="nav nav-pills">
+  					<li class="active">
+            <li><%= link_to "Home",			     root_path %></li>
+  					<li><%= link_to "Our Story",		 story_path %></li>
+  					<li><%= link_to "Ceremony",		   ceremony_path %></li>
+  					<li><%= link_to "Wedding Party", party_path %></li>
+  					<li><%= link_to "Registry",			 registry_path %></li>
+  					<li><%= link_to "RSVP",			     rsvp_path %></li>
+  				</ul>
+  			</nav>
+  		</div>
+  </div class="container">
+	<%= yield %>
+  </div>
 </body>
 </html>

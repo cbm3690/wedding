@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def rsvp
   end
 
-  def gifts
+  def registry
   end
 
   def ceremony

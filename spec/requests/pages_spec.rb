@@ -2,77 +2,48 @@ require 'spec_helper'
 
 describe "Pages" do
 
-	describe "Home page" do	
+	subject { page } 
 
-		it "should have the h1 'Carly & Cory'" do
-			visit '/pages/home'
-			page.should have_selector('h1', :text => 'Carly & Cory')
-		end
+	describe "Home page" do
+		before { visit root_path }	
 
-		it "should have the title 'Home'" do
-			visit '/pages/home'
-			page.should have_selector('title', :text => "Carly & Cory | Home")
-		end
+		it { should have_selector('h1', text: 'Carly & Cory') }
+		it { should have_selector('title', text: full_title('')) }
+		it { should_not have_selector('title', text:'| Home') }
 	end
 
 	describe "Story page" do
+		before { visit story_path }
 
-		it "should have the h1 'Our Story'" do
-			visit '/pages/story'
-			page.should have_selector('h1', :text => 'Our Story')
-		end
-
-		it "should have the title 'Our Story'" do
-			visit '/pages/story'
-			page.should have_selector('title', :text => "Carly & Cory | Our Story")
-		end
+		it { should have_selector('h1', text: 'Our Story') }
+		it { should have_selector('title', text: full_title('Our Story')) }
 	end
 
 	describe "RSVP page" do
-		it "should have the h1 'RSVP'" do
-			visit '/pages/rsvp'
-			page.should have_selector('h1', :text => 'RSVP')
-		end
+		before { visit rsvp_path }
 
-		it "should have the title 'RSVP'" do
-			visit '/pages/rsvp'
-			page.should have_selector('title', :text => "Carly & Cory | RSVP")
-		end
+		it { should have_selector('h1', text: 'RSVP') }
+		it { should have_selector('title', text: full_title('RSVP')) }
 	end
 
-	describe "Gifts page" do
-		it "should have the h1 'Gifts'" do
-			visit '/pages/gifts'
-			page.should have_selector('h1', :text => 'Gifts')
-		end
+	describe "Registry page" do
+		before { visit registry_path }
 
-		it "should have the title 'Gifts'" do
-			visit '/pages/gifts'
-			page.should have_selector('title', :text => "Carly & Cory | Gifts")
-		end
+		it { should have_selector('h1', text: 'Registry') }
+		it { should have_selector('title', text: full_title('Registry')) }
 	end
 
 	describe "Ceremony page" do
-		it "should have the h1 'Ceremony'" do
-			visit '/pages/ceremony'
-			page.should have_selector('h1', :text => 'Ceremony')
-		end
+		before { visit ceremony_path }
 
-		it "should have the title 'Ceremony'" do
-			visit '/pages/ceremony'
-			page.should have_selector('title', :text => "Carly & Cory | Ceremony")
-		end
+		it { should have_selector('h1', text: 'Ceremony') }
+		it { should have_selector('title', text: full_title('Ceremony')) }
 	end
 
 	describe "Party page" do
-		it "should have the h1 'Wedding Party'" do
-			visit '/pages/party'
-			page.should have_selector('h1', :text => 'Wedding Party')
-		end
+		before { visit party_path }
 
-		it "should have the title 'Wedding Party'" do
-			visit '/pages/party'
-			page.should have_selector('title', :text => "Carly & Cory | Wedding Party")
-		end
+		it { should have_selector('h1', text: 'Wedding Party') }
+		it { should have_selector('title', text: full_title('Wedding Party')) }
 	end
 end

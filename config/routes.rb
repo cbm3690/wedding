@@ -1,10 +1,11 @@
 WeddingSite::Application.routes.draw do
-  get "pages/home"
-  get "pages/story"
-  get "pages/rsvp"
-  get "pages/gifts"
-  get "pages/ceremony"
-  get "pages/party"
+  root to: 'pages#home'
+
+  match '/story',     to: 'pages#story'
+  match '/rsvp',      to: 'pages#rsvp'
+  match '/registry',  to: 'pages#registry'
+  match '/ceremony',  to: 'pages#ceremony'
+  match '/party',     to: 'pages#party'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
