@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-color: #f0e7d6;
+	background-color: #ede7dd;
 }
 
 section {
@@ -31,26 +31,27 @@ textarea {
 .nav {
 	position: fixed;
 	width: 100%;
-	margin-left: 2%;
+	margin-left: 5%;
 	bottom: 0;
 	text-align: center;
 }
 
 .nav-pills a {
-	color: #333;
-	font-size: 24px;
-	font-weight: 500;
+	font-family: bebas neue;
+	letter-spacing: .1em;
+	color: #1A2043;
+	font-size: 30px;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .nav-pills a:hover {
-	color: #333;
 	border-bottom: 5px solid #F4DFD3;
 	margin-top: -5px;
 }
 
 .nav-pills :hover {
-	background-color: #f0e7d6;
+	background-color: none;
 }
 
 /* typography */
@@ -64,6 +65,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #1A2043;
 }
 
 h2 {
@@ -75,9 +77,17 @@ h2 {
   color: #999;
 }
 
+h3 {
+	display: inline;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.hidden {
+	color: #ede7dd;
 }
 
 
@@ -102,6 +112,17 @@ p {
 */
 
 
+/* Footer */
+
+.footerPhoto {
+	display: block;
+	width: 20%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 80px;
+	}
+
 /* Home */
 
 .mainPhoto {
@@ -111,11 +132,28 @@ p {
 	top: 0px;
 }
 
+.carlyPhoto {
+	width: 100%;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	background: #999999;
+}
+
+.coryPhoto {
+	width: 100%;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	background: #999999;
+}
 
 /* Ceremony */
 
 .map {
-	margin-left: 25%;
+	width: 800px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 
@@ -123,7 +161,17 @@ p {
 
 .registry {
 	margin-left: 38%;
-	font-size: 64px;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* RSVP */
+
+.radio {
+	margin-right:0;
+}
+
+.form-actions {
+	background-color: #ede7dd;
 }

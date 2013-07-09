@@ -2,10 +2,12 @@ WeddingSite::Application.routes.draw do
   root to: 'pages#home'
 
   match '/story',     to: 'pages#story'
-  match '/rsvp',      to: 'pages#rsvp'
   match '/registry',  to: 'pages#registry'
   match '/ceremony',  to: 'pages#ceremony'
   match '/party',     to: 'pages#party'
+
+  match 'rsvp' => 'rsvp#new', :as => 'rsvp', :via => :get
+  match 'rsvp' => 'rsvp#create', :as => 'rsvp', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
