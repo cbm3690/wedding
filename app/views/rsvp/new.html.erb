@@ -1,0 +1,50 @@
+<% provide(:title, 'RSVP') %>
+<h1>RSVP</h1>
+
+<div class="container">
+  <div class="row">
+  <div class="span6">
+<%= form_for @message, :url => rsvp_path, :html => {:class => "form-horizontal"} do |form| %>
+  <fieldset>
+
+    <div class="control-group">
+      <div class="controls">
+      <%= form.radio_button :coming, "We are coming!", :class => "control-label", checked: true %>
+        <%= label_tag :coming, "We are coming!" %>
+      </div>
+      <div class="controls">
+      <%= form.radio_button :coming, "Screw you guys.", :class => "control-label" %>
+        <%= label_tag :coming, "Screw you guys." %>
+      </div>
+      </div>
+
+    <div class="control-group">
+        <%= form.label :name, :class => "control-label" %>
+        <div class="controls">
+          <%= form.text_field :name, :class => "input-xlarge", :placeholder => "Name" %>
+        </div>
+    </div>
+    
+    <div class="control-group">
+        <%= form.label :attendees, :class => "control-label" %>
+        <div class="controls">
+          <%= form.text_field :attendees, :class => "input-xlarge", :placeholder => "Who's coming with you?" %>
+        </div>
+    </div>
+    
+    <div class="control-group">
+        <%= form.label :note, :class => "control-label" %>
+        <div class="controls">
+          <%= form.text_area :note, :class => "input-xlarge", :placeholder => "Leave us a note", :size => "30x10" %>
+        </div>
+    </div>
+
+    <div class="form-actions">
+      <%= form.submit "Send", :class => "btn" %>
+    </div>
+  </fieldset>
+  <% end %>
+</div>
+</div>
+</div>
+
