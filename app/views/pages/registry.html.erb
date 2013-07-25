@@ -1,11 +1,23 @@
 <% provide(:title, 'Registry') %>
+
+<%= image_tag("Registry.jpg", alt: "Carly & Cory", :class => "headerPhoto") %>
+
 <h1>Registry</h1>
-<div class="registry">
-	<a href="http://m.macys.com/registry/wedding/guest/?registryId=2100476" target="_blank">Macy's</a>
-	<br>
-	</br>
-	<a href="http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=2549751&viewtype=listview&isfromsearch=true&fname=carly&lname=sewell&regtype=registry.wedding,registry.baby,registry.splday" target="_blank">Kohl's</a>
-	<br>
-	</br>
-	<a href="http://www.amazon.com/gp/wedding/homepage" target="_blank">AMAZON</a>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+		</div>
+		<div class="span8">
+			<div class="registry">
+				<%= link_to image_tag("macys.jpg", alt: "Macy's", :class => "macysPhoto"), "http://macys.com/registry/wedding/guest/?registryId=2100476", :target => "_blank" %>
+				<br>
+				</br>
+				<%= link_to image_tag("Kohl's.png", alt: "Kohl's", :class => "kohlsPhoto"), "http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=2549751&viewtype=listview&isfromsearch=true&fname=carly&lname=sewell&regtype=registry.wedding,registry.baby,registry.splday", :target => "_blank" %>
+				<br>
+				</br>
+				<%= link_to image_tag("target.jpg", alt: "Target", :class => "targetPhoto"), "http://www.target.com", :target => "_blank" %>
+			</div>
+		</div>
+	</div>
 </div>

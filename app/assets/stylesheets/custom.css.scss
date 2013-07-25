@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-color: #ede7dd;
+	background-color: #EBEBE2;
 }
 
 section {
@@ -26,13 +26,26 @@ textarea {
 	margin-bottom: 10px;
 }
 
+
+
 /* Navigation */
+
+.navigationBar {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: white;
+	height: 8%;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	vertical-align: center;
+}
 
 .nav {
 	position: fixed;
 	width: 100%;
 	margin-left: 5%;
-	bottom: 0;
+	bottom: -2px;
 	text-align: center;
 }
 
@@ -43,16 +56,15 @@ textarea {
 	font-size: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
-}
+	line-height: 30px;
+	}
 
 .nav-pills a:hover {
-	border-bottom: 5px solid #F4DFD3;
-	margin-top: -5px;
+	border-bottom: 8px solid #F4DFD3;
+	margin-bottom: -8px;
 }
 
-.nav-pills :hover {
-	background-color: none;
-}
+
 
 /* typography */
 
@@ -62,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   color: #1A2043;
@@ -82,46 +94,25 @@ h3 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 .hidden {
-	color: #ede7dd;
+	color: #EBEBE2;
 }
 
 
-/* header
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-*/
-
-
-/* Footer */
-
-.footerPhoto {
-	display: block;
-	width: 20%;
+/* All Pages */
+.headerPhoto {
+	width: 100%;
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 80px;
-	}
+	left: 0px;
+	top: 0px;
+}
+
+
 
 /* Home */
 
@@ -130,6 +121,7 @@ p {
 	height: auto;
 	left: 0px;
 	top: 0px;
+	padding-bottom: 25px;
 }
 
 .carlyPhoto {
@@ -148,6 +140,27 @@ p {
 	background: #999999;
 }
 
+#Her {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#Him {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+/* Our Story */
+
+.storyText {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+
+
 /* Ceremony */
 
 .map {
@@ -156,22 +169,77 @@ p {
 	margin-bottom: 30px;
 }
 
+#ceremonyText {
+	text-align: center;
+}
+
+
+
+/* Party */
+
+.party {
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+	padding-bottom: 25px;
+}
+
+
+
 
 /* Registry */
 
-.registry {
-	margin-left: 38%;
-	font-size: 30px;
-	margin-bottom: 30px;
+.macysPhoto {
+	display: block;
+	width: 30%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+.kohlsPhoto {
+	display: block;
+	width: 30%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.targetPhoto {
+	display: block;
+	width: 30%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+}
+
 
 
 /* RSVP */
 
 .radio {
-	margin-right:0;
+	float: left
+}
+
+.radioText {
+	padding-left: 25px;
 }
 
 .form-actions {
-	background-color: #ede7dd;
+	background-color: #EBEBE2;
 }
+
+
+
+/* Footer */
+
+.footerPhoto {
+	display: block;
+	width: 20%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 80px;
+	}

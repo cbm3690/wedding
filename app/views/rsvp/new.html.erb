@@ -1,4 +1,7 @@
 <% provide(:title, 'RSVP') %>
+
+<%= image_tag("RSVP.jpg", alt: "Carly & Cory", :class => "headerPhoto") %>
+
 <h1>RSVP</h1>
 
 <div class="container">
@@ -9,19 +12,19 @@
 
     <div class="control-group">
       <div class="controls">
-      <%= form.radio_button :coming, "We are coming!", :class => "control-label", checked: true %>
-        <%= label_tag :coming, "We are coming!" %>
+      <%= form.radio_button :coming, "Wouldn't miss it!", :class => "radio", checked: true %>
+        <%= label_tag :coming, "Wouldn't miss it!", :class => "radioText" %>
       </div>
       <div class="controls">
-      <%= form.radio_button :coming, "Screw you guys.", :class => "control-label" %>
-        <%= label_tag :coming, "Screw you guys." %>
+      <%= form.radio_button :coming, "We'll celebrate from afar!", :class => "radio" %>
+        <%= label_tag :coming, "We'll celebrate from afar!", :class => "radioText" %>
       </div>
       </div>
 
     <div class="control-group">
         <%= form.label :name, :class => "control-label" %>
         <div class="controls">
-          <%= form.text_field :name, :class => "input-xlarge", :placeholder => "Name" %>
+          <%= form.text_field :name, :class => "input-xlarge", :placeholder => "Your name" %>
         </div>
     </div>
     
@@ -43,7 +46,7 @@
       <%= form.submit "Send", :class => "btn" %>
     </div>
   </fieldset>
-  <% end %>
+  <% end %> 
 </div>
 </div>
 </div>
