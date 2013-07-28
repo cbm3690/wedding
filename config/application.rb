@@ -21,7 +21,7 @@ module WeddingSite
     config.action_mailer.smtp_settings = {
         :address                => "smtp.gmail.com",
         :port                   => 587,
-        :domain                 => "0.0.0.0:3000",
+        :domain                 => "carlyandcory.com",
         :user_name              => "cory@corymikell.com",
         :password               => "jake1984",
         :authentication         => :plain,
@@ -29,7 +29,7 @@ module WeddingSite
     }
 
     config.action_mailer.default_url_options = {
-        :host => "0.0.0.0:3000"
+        :host => "carlyandcory.com"
     }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

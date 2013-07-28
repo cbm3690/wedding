@@ -126,7 +126,7 @@ p {
 
 .carlyPhoto {
 	width: 100%;
-	height: 250px;
+	height: auto;
 	left: 0px;
 	top: 0px;
 	background: #999999;
@@ -134,7 +134,7 @@ p {
 
 .coryPhoto {
 	width: 100%;
-	height: 250px;
+	height: auto;
 	left: 0px;
 	top: 0px;
 	background: #999999;
@@ -148,6 +148,10 @@ p {
 #Him {
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.homeText {
+	padding-bottom: 25px;
 }
 
 
