@@ -30,6 +30,6 @@
 	<%= yield %>
   <%= render 'layouts/footer' %>
   </div>
-  <%= render :partial => ‘layouts/ga’ if RAILS_ENV == ‘production’ %>
+  <% if Rails.env.production? %> <%= render 'layouts/ga' %><% end %> 
 </body>
 </html>
