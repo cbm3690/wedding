@@ -30,9 +30,11 @@ textarea {
 
 /* Navigation */
 
-.nav li a {
-	display: inline;
-}
+.nav ul li a {
+	display: block;
+    float: left;
+    position: relative;
+    right: 50%;}
 
 .nav-pills li{
     display:inline;
@@ -52,9 +54,13 @@ textarea {
 .nav {
 	position: fixed;
 	width: 100%;
-	margin-left: 5%;
 	bottom: -2px;
 	text-align: center;
+	display: inline-block;
+}
+
+.nav ul {
+	display: inline-block;
 }
 
 .nav-pills a {
@@ -76,6 +82,19 @@ textarea {
 
 
 /* typography */
+
+@font-face {
+    font: {
+       family: 'Bebas Neue';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('BebasNeue-webfont.eot', font);
+    src: asset-url('BebasNeue-webfont.eot', font) format('embedded-opentype'),
+         asset-url('BebasNeue-webfont.woff', font) format('woff'),
+         asset-url('BebasNeue-webfont.ttf', font) format('truetype'),
+         asset-url('BebasNeue-webfont.svg#BebasNeueRegular', font) format('svg')
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
