@@ -30,6 +30,14 @@ textarea {
 
 /* Navigation */
 
+.nav li a {
+	display: inline;
+}
+
+.nav-pills li{
+    display:inline;
+}
+
 .navigationBar {
 	position: fixed;
 	width: 100%;
@@ -57,6 +65,7 @@ textarea {
 	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 30px;
+	display: inline-block;
 	}
 
 .nav-pills a:hover {
